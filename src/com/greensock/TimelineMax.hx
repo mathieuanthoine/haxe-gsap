@@ -44,7 +44,7 @@ extern class TimelineMax extends TimelineLite
 	 * @param	omitDelayedCalls (default = true) — If true (the default), delayed calls will be left on the root rather than wrapped into the new TimelineLite. That way, if youpause() or alter the timeScale, or reverse(), they won't be affected. However, in some situations it might be very useful to have them included.
 	 * @return A new TimelineLite instance containing the root tweens/timelines
 	 */
-	static public function exportRoot (?vars:Dynamic, ?omitDelayedCalls:Bool):TimelineLite
+	static public function exportRoot (?vars:Dynamic, ?omitDelayedCalls:Bool):TimelineLite;
 
 	/**
 	 * Returns the tweens/timelines that are currently active in the timeline, meaning the timeline's playhead is positioned on the child tween/timeline and the child isn't paused.

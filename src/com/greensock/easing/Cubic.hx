@@ -4,7 +4,7 @@ package com.greensock.easing;
  * Cubic
  */
 @:native("Cubic")
-extern class Cubic 
+extern class Cubic extends Ease
 {
 
 	public function new(); 

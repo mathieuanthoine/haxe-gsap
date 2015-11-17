@@ -177,7 +177,7 @@ extern class Animation {
 	 * @param	suppressEvents (default = false) — If true, no events or callbacks will be triggered when the playhead moves to the new position.
 	 * @return Omitting the parameter returns the current value (getter), whereas defining the parameter sets the value (setter) and returns the instance itself for easier chaining.
 	 */
-    public function totalProgress(?value:Float,?suppressEvents):Dynamic;
+    public function totalProgress(?value:Float,?suppressEvents:Bool):Dynamic;
 	
 	/**
 	 * Gets or sets the position of the playhead according to the totalDuration which includes any repeats and repeatDelays (only available in TweenMax and TimelineMax).

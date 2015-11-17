@@ -72,7 +72,7 @@ extern class TweenLite extends Animation
 	 * @param	includeRepeats (default = true) — by default, repeats are included when calculating the end time but you can pass false to prevent that.
 	 * @return TweenLite instance
 	 */
-	public function endTime (?includeRepeats:Bool) Float;
+	public function endTime (?includeRepeats:Bool): Float;
 	
 	/**
 	 * Static method for creating a TweenLite instance that tweens backwards - you define the BEGINNING values and the current values are used as the destination values which is great for doing things like animating objects onto the screen because you can set them up initially the way you want them to look at the end of the tween and then animate in from elsewhere.

@@ -108,7 +108,7 @@ extern class TweenMax extends TweenLite {
 	 * @param	threshold Amount of lag (in millisecond) after which the engine will adjust the internal clock to act like the adjustedLag elapsed instead. The lower the number, the more likely (and frequently) lagSmoothing() will be triggered. For example, if the threshold is 500 and the adjustedLag is 33 (those are the defaults), the only time an adjustment will occur is when more than 500ms elapses between two ticks in which case it will act as though only 33ms elapsed. So if the CPU bogs down for 2 full seconds (yikes!), your animations will move 33ms worth of time on the next render instead of jumping a full 2-seconds. Note: this has no affect on the device’s performance or true frame rate – this merely affects how GSAP reacts when the browser drops frames.
 	 * @param	adjustedLag The new (adjusted) amount of time (in milliseconds) from the previous tick. Typically it is best to set this to at least 16 because that's the normal amount of time between ticks when the engine is running at 60 frames per second. It is more common to set it to at least 33 (which is 2 normal "ticks"). If you set the threshold and the adjustedLag too low, your animations can appear to slow down under heavy pressure. The higher the adjustedLag, the more of a "jump" you'll see when lagSmoothing kicks in.
 	 */
-	static public function lagSmoothing(threshold:Float, adjustedLag:Float );
+	static public function lagSmoothing(threshold:Float, adjustedLag:Float):Void ;
 	
 	/**
 	 * [deprecated] Pauses all tweens and/or delayedCalls/callbacks and/or timelines.

@@ -4,7 +4,7 @@ package com.greensock.easing;
  * Elastic
  */
 @:native("Elastic")
-extern class Elastic 
+extern class Elastic extends Ease
 {
 
 	public function new(); 

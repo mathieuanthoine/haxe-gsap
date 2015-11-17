@@ -5,7 +5,7 @@ package com.greensock.easing;
  */
 
 @:native("Circ")
-extern class Circ 
+extern class Circ extends Ease
 {
 
 	public function new(); 

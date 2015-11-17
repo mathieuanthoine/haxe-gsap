@@ -4,7 +4,7 @@ package com.greensock.easing;
  * Bounce
  */
 @:native("Bounce")
-extern class Bounce 
+extern class Bounce extends Ease
 {
 
 	public function new(); 

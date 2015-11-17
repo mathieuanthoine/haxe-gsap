@@ -4,7 +4,7 @@ package com.greensock.easing;
  * Power0
  */
 @:native("Power0")
-extern class Power0 
+extern class Power0 extends Ease 
 {
 
 	public function new(); 

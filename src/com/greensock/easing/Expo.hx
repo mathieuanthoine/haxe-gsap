@@ -4,7 +4,7 @@ package com.greensock.easing;
  * Expo
  */
 @:native("Expo")
-extern class Expo 
+extern class Expo extends Ease 
 {
 
 	public function new(); 
