@@ -3,7 +3,7 @@ Haxe externs for Greensock Animation Platform (https://github.com/greensock/Gree
 ## GSAP
 - https://greensock.com/gsap
 
-## Version Supported
+## Supported version
 - 1.1.18
 
 ## Download & Set Up
