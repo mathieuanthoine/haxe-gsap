@@ -1,6 +1,6 @@
 Haxe externs for Greensock Animation Platform (https://github.com/greensock/GreenSock-JS/)
 
-## GSAP
+## GSAP website
 - https://greensock.com/gsap
 
 ## Supported version
