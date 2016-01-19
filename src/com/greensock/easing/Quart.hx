@@ -3,16 +3,19 @@ package com.greensock.easing;
 /**
  * Quart
  */
+
+#if (js)
 @:native("Quart")
+#end
 extern class Quart extends Ease 
 {
 
 	public function new(); 
 	
-	static public function	easeIn () : Quart;
+	static public var	easeIn : Quart;
 
-	static public function	easeInOut () : Quart;
+	static public var	easeInOut : Quart;
 	
-	static public function	easeOut () : Quart;
+	static public var	easeOut : Quart;
 	
 }

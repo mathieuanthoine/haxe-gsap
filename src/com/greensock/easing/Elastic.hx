@@ -3,28 +3,19 @@ package com.greensock.easing;
 /**
  * Elastic
  */
+
+#if (js)
 @:native("Elastic")
+#end
 extern class Elastic extends Ease
 {
 
 	public function new(); 
 	
-	/**
-	 * 
-	 * @return
-	 */
-	static public function	easeIn () : Elastic;
+	static public var	easeIn : Elastic;
 
-	/**
-	 * 
-	 * @return
-	 */
-	static public function	easeInOut () : Elastic;
+	static public var	easeInOut : Elastic;
 	
-	/**
-	 * 
-	 * @return
-	 */
-	static public function	easeOut () : Elastic;
+	static public var	easeOut : Elastic;
 	
 }

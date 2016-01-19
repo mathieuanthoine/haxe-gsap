@@ -3,16 +3,19 @@ package com.greensock.easing;
 /**
  * Strong
  */
+
+#if (js)
 @:native("Strong")
+#end
 extern class Strong extends Ease 
 {
 
 	public function new(); 
 	
-	static public function	easeIn () : Strong;
+	static public var	easeIn : Strong;
 
-	static public function	easeInOut () : Strong;
+	static public var	easeInOut : Strong;
 	
-	static public function	easeOut () : Strong;
+	static public var	easeOut : Strong;
 	
 }

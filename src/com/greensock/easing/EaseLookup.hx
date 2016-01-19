@@ -4,7 +4,9 @@ package com.greensock.easing;
  * EaseLookup
  */
 
+#if (js)
 @:native("EaseLookup")
+#end
 extern class EaseLookup 
 {
 	

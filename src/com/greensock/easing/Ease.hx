@@ -4,7 +4,9 @@ package com.greensock.easing;
  * Base class for all GreenSock easing equations. In its simplest form, an Ease is responsible for translating linear time (typically represented as a number between 0 and 1 where 0 is the beginning, 0.5 is halfway complete, and 1 is the end) into a value that has a different rate of change but still starts at 0 and ends at 1. In the GreenSock platform, eases are used to give tweens/animations the look and feel that the animator desires. For example, a ball rolling to a stop would decelerate over time (easeOut) rather than using a linear velocity. An Elastic ease could be used to make an object appear as though it is loosely attached somewhere and is snapping into place with loose (or tight) tension.
  */
 
+#if (js)
 @:native("Ease")
+#end
 extern class Ease
 {
 	/**

@@ -3,7 +3,10 @@ package com.greensock.core;
 /**
  * Base class for all TweenLite, TweenMax, TimelineLite, and TimelineMax classes, providing core methods/properties/functionality, but there is no reason to create an instance of this class directly.
  */
+
+#if (js)
 @:native("Animation")
+#end
 extern class Animation {
 	
 	/**

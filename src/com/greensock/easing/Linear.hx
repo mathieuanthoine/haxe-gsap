@@ -3,20 +3,23 @@ package com.greensock.easing;
 /**
  * Linear
  */
+
+#if (js)
 @:native("Linear")
+#end
 extern class Linear extends Ease
 {
 
-	public function new(); 
+	public function new();
 
-	static public function	ease () : Linear;
-	
-	static public function	easeIn () : Linear;
+	static public var	ease : Linear;
 
-	static public function	easeInOut () : Linear;
-	
-	static public function	easeNone () : Linear;
-	
-	static public function	easeOut () : Linear;	
-	
+	static public var	easeIn : Linear;
+
+	static public var	easeInOut : Linear;
+
+	static public var	easeNone : Linear;
+
+	static public var	easeOut : Linear;
+
 }

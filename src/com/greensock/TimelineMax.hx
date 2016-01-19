@@ -5,7 +5,9 @@ import com.greensock.core.Animation;
  * TimelineMax extends TimelineLite, offering exactly the same functionality plus useful (but non-essential) features like repeat, repeatDelay, yoyo, currentLabel(), addCallback(), removeCallback(), tweenTo(), tweenFromTo(), getLabelAfter(), getLabelBefore(), getActive() (and probably more in the future). It is the ultimate sequencing tool that acts like a container for tweens and other timelines, making it simple to control them as a whole and precisely manage their timing.
  */
 
+#if (js)
 @:native("TimelineMax")
+#end
 extern class TimelineMax extends TimelineLite 
 {
 

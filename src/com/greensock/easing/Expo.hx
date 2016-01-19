@@ -3,28 +3,19 @@ package com.greensock.easing;
 /**
  * Expo
  */
+
+#if (js)
 @:native("Expo")
+#end
 extern class Expo extends Ease 
 {
 
 	public function new(); 
 	
-	/**
-	 * 
-	 * @return
-	 */
-	static public function	easeIn () : Expo;
+	static public var	easeIn : Expo;
 
-	/**
-	 * 
-	 * @return
-	 */
-	static public function	easeInOut () : Expo;
+	static public var	easeInOut : Expo;
 	
-	/**
-	 * 
-	 * @return
-	 */
-	static public function	easeOut () : Expo;
+	static public var	easeOut : Expo;
 	
 }

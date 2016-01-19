@@ -4,17 +4,19 @@ package com.greensock.easing;
  * Circ
  */
 
+#if (js)
 @:native("Circ")
+#end
 extern class Circ extends Ease
 {
 
 	public function new(); 
 	
-	static public function	easeIn () : Circ;
+	static public var	easeIn : Circ;
 
-	static public function	easeInOut () : Circ;
+	static public var	easeInOut : Circ;
 	
-	static public function	easeOut () : Circ;
+	static public var	easeOut : Circ;
 	
 	
 }
