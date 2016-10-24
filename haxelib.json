@@ -3,9 +3,9 @@
   "license": "MIT",
   "tags": ["js","haxe","extern","web","gsap","greensock","tweenmax","tweenlite"],
   "description": "Haxe externs for Greensock Animation Platform (gsap)",
-  "contributors": ["mathieu_anthoine"],
-  "releasenote": "Release of version 1.0.1",
-  "version": "1.0.1",
+  "contributors": ["mathieu_anthoine","mathieuanthoine"],
+  "releasenote": "Release of version 1.0.2",
+  "version": "1.0.2",
   "url": "https://github.com/mathieuanthoine/haxe-gsap",
   "classPath": "src",
   "dependencies": {
