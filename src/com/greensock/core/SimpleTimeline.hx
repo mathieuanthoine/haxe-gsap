@@ -3,7 +3,10 @@ package com.greensock.core;
 /**
  * SimpleTimeline is the base class for TimelineLite and TimelineMax, providing the most basic timeline functionality and it is used for the root timelines in TweenLite but is only intended for internal use in the GreenSock tweening platform. It is meant to be very fast and lightweight.
  */
+
+#if (js)
 @:native("SimpleTimeline")
+#end
 extern class SimpleTimeline extends Animation {
 	
 	/**

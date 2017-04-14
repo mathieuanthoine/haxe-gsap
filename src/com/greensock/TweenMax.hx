@@ -6,7 +6,9 @@ import com.greensock.TweenLite;
  * TweenMax extends TweenLite, adding many useful (but non-essential) features like repeat(), repeatDelay(), yoyo(), and more. It also includes many extra plugins by default, making it extremely full-featured. Any of the plugins can work with TweenLite too, but TweenMax saves you the step of loading the common ones like CSSPlugin, RoundPropsPlugin, BezierPlugin, AttrPlugin, DirectionalRotationPlugin as well as EasePack, TimelineLite, and TimelineMax. Since TweenMax extends TweenLite, it can do ANYTHING TweenLite can do plus more. The syntax is identical. You can mix and match TweenLite and TweenMax in your project as you please, but if file size is a concern it is best to stick with TweenLite unless you need a particular TweenMax-only feature. 
  */
 
-@:native("TweenMax") 
+#if (js)
+@:native("TweenMax")
+#end
 extern class TweenMax extends TweenLite {
 
 	/**

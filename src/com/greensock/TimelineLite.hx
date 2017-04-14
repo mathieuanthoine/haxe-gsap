@@ -7,7 +7,9 @@ import com.greensock.core.SimpleTimeline;
  *
  */
 
+#if (js)
 @:native("TimelineLite")
+#end
 extern class TimelineLite extends SimpleTimeline 
 {
 	

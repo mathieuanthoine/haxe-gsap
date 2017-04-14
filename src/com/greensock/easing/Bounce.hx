@@ -3,17 +3,20 @@ package com.greensock.easing;
 /**
  * Bounce
  */
+
+#if (js)
 @:native("Bounce")
+#end
 extern class Bounce extends Ease
 {
 
 	public function new(); 
 	
-	static public function	easeIn () : Bounce;
+	static public var	easeIn : Bounce;
 
-	static public function	easeInOut () : Bounce;
+	static public var	easeInOut : Bounce;
 	
-	static public function	easeOut () : Bounce;
+	static public var	easeOut : Bounce;
 	
 	
 }

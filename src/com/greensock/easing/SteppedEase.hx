@@ -3,7 +3,10 @@ package com.greensock.easing;
 /**
  * SteppedEase
  */
+
+#if (js)
 @:native("SteppedEase")
+#end
 extern class SteppedEase extends Ease 
 {
 
