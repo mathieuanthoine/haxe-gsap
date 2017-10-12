@@ -6,9 +6,7 @@ import com.greensock.TweenLite;
  * TweenMax extends TweenLite, adding many useful (but non-essential) features like repeat(), repeatDelay(), yoyo(), and more. It also includes many extra plugins by default, making it extremely full-featured. Any of the plugins can work with TweenLite too, but TweenMax saves you the step of loading the common ones like CSSPlugin, RoundPropsPlugin, BezierPlugin, AttrPlugin, DirectionalRotationPlugin as well as EasePack, TimelineLite, and TimelineMax. Since TweenMax extends TweenLite, it can do ANYTHING TweenLite can do plus more. The syntax is identical. You can mix and match TweenLite and TweenMax in your project as you please, but if file size is a concern it is best to stick with TweenLite unless you need a particular TweenMax-only feature. 
  */
 
-#if (js)
-@:native("TweenMax")
-#end
+@:native("TweenMax") 
 extern class TweenMax extends TweenLite {
 
 	/**
@@ -28,7 +26,7 @@ extern class TweenMax extends TweenLite {
 	 * @param	useFrames (default = false) — If the delay should be measured in frames instead of seconds, set useFrames to true
 	 * @return TweenMax instance
 	 */
-	static public function delayedCall(delay:Float, callback:Void->Void, ?params:Array<Dynamic>, ?scope:Dynamic, ?useFrames:Bool):TweenMax;	
+	static public function delayedCall(delay:Float, callback:Dynamic, ?params:Array<Dynamic>, ?scope:Dynamic, ?useFrames:Bool):TweenMax;	
 	
 	/**
 	 * Static method for creating a TweenMax instance that tweens backwards - you define the BEGINNING values and the current values are used as the destination values which is great for doing things like animating objects onto the screen because you can set them up initially the way you want them to look at the end of the tween and then animate in from elsewhere.
@@ -96,7 +94,7 @@ extern class TweenMax extends TweenLite {
 	 * Immediately kills all of the delayedCalls to a particular function.
 	 * @param	func The function for which all delayedCalls should be killed/cancelled.
 	 */
-	static public function killDelayedCallsTo(func:Void->Void):Void;
+	static public function killDelayedCallsTo(func:Dynamic):Void;
 	
 	/**
 	 * Kills all the tweens (or specific tweening properties) of a particular object or the delayedCalls to a particular function.

@@ -7,9 +7,7 @@ import com.greensock.easing.Ease;
  * TweenLite is an extremely fast, lightweight, and flexible animation tool that serves as the foundation of the GreenSock Animation Platform (GSAP). A TweenLite instance handles tweening one or more properties of any object (or array of objects) over time. TweenLite can be used on its own to accomplish most animation chores with minimal file size or it can be used in conjunction with advanced sequencing tools like TimelineLite or TimelineMax to make complex tasks much simpler.
  */
 
-#if (js)
-@:native("TweenLite")
-#end
+@:native("TweenLite") 
 extern class TweenLite extends Animation 
 {
 
@@ -67,7 +65,7 @@ extern class TweenLite extends Animation
      * @param	useFrames (default = false) — If the delay should be measured in frames instead of seconds, setuseFrames to true (default is false)
      * @return
      */
-    static public function delayedCall(delay:Float, callback:Void->Void, ?params:Array<Dynamic>, ?scope:Dynamic, ?useFrames:Bool):TweenLite;
+    static public function delayedCall(delay:Float, callback:Dynamic, ?params:Array<Dynamic>, ?scope:Dynamic, ?useFrames:Bool):TweenLite;
 	
 	/**
 	 * Returns the time at which the animation will finish according to the parent timeline's local time.
@@ -107,7 +105,7 @@ extern class TweenLite extends Animation
 	 * Immediately kills all of the delayedCalls to a particular function.
 	 * @param	func The function for which all delayedCalls should be killed/cancelled.
 	 */
-    static public function killDelayedCallsTo(func:Void->Void):Void;
+    static public function killDelayedCallsTo(func:Dynamic):Void;
 	
 	/**
 	 * Kills all the tweens (or specific tweening properties) of a particular object or delayedCalls to a particular function.
