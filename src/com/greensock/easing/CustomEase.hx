@@ -10,5 +10,5 @@ package com.greensock.easing;
 extern class CustomEase extends Ease
 {
     public function new();
-    public function create(curveID:String, curveParams:String):Ease;
+    static public function create(curveID:String, curveParams:String):Ease;
 }
