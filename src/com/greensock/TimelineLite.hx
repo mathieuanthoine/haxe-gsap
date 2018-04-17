@@ -13,7 +13,7 @@ import com.greensock.core.SimpleTimeline;
 extern class TimelineLite extends SimpleTimeline 
 {
 	
-	public function new();
+	public function new(?vars: Dynamic);
 	
 	/**
 	 * Adds a label to the timeline, making it easy to mark important positions/times.
