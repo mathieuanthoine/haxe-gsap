@@ -59,7 +59,7 @@ extern class TweenMax extends TweenLite {
 	 * @param	target The target whose tweens should be returned, or an array of such targets
 	 * @param	onlylActive (default = false) — If true, only tweens that are currently active will be returned (a tween is considered "active" if the virtual playhead is actively moving across the tween and it is not paused, nor are any of its ancestor timelines paused).
 	 */
-    static public function getTweensOf(target:Dynamic, onlyActive:Bool):Void;
+    static public function getTweensOf(target:Dynamic, onlyActive:Bool):Array<Animation>;
 	
 	/**
 	 * Gets or sets the global timeScale which is a multiplier that affects ALL animations equally. This is a great way to globally speed up or slow down all animations at once.
