@@ -7,7 +7,9 @@ import com.greensock.easing.Ease;
  * TweenLite is an extremely fast, lightweight, and flexible animation tool that serves as the foundation of the GreenSock Animation Platform (GSAP). A TweenLite instance handles tweening one or more properties of any object (or array of objects) over time. TweenLite can be used on its own to accomplish most animation chores with minimal file size or it can be used in conjunction with advanced sequencing tools like TimelineLite or TimelineMax to make complex tasks much simpler.
  */
 
+#if (js)
 @:native("TweenLite") 
+#end
 extern class TweenLite extends Animation 
 {
 
